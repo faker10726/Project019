@@ -82,7 +82,7 @@ test['Vendor_Code'] = test['Vendor_Code'].str.extract('(\d+)').astype(int)
 iD = list(test['Inv_Id'])
 test.drop('Inv_Id',axis=1,inplace=True)
 
-Casscade(test)
+Casscade(test]
 test.loc[test['Item_Description'].str.contains('Auto Leasing'), 'Item_Description'] = '3'
 #test["Item_Description"] = test["Item_Description"].str.split("- ", expand = True)[2]
 #lenc = LabelEncoder()
